@@ -16,7 +16,7 @@ void Swap(int & a, int & b)
 }
 //选择排序算法
 //升序排列
-void BubbleSort(int* arr,int arr_len)
+void SelectSort(int* arr,int arr_len)
 {
     //外层循环，需要执行 （数组元素个数-1）次。每次执行完成一个最小数的查找。
     for (int i = 0; i < arr_len - 1; i++)
@@ -55,7 +55,7 @@ int main()
     PrintAarry(arr, arr_len);
 
     //对数组进行选择排序
-    BubbleSort(arr,arr_len);
+    SelectSort(arr,arr_len);
 
     cout << "排序后数组为：" << endl;
     PrintAarry(arr, arr_len);
